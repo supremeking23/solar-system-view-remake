@@ -16,31 +16,7 @@ hr {
     border-top: 5px dotted var(--black-variant);
 }
 
-.mercury-hero {
-     /* Location of the image */
-    background: url('./assets/featured_mercury.jpg') ;
-    
-    /* Background image doesn't tile */
-    background-repeat: no-repeat;
-    
-    /* Background image is centered vertically and horizontally at all times */
-    background-position: center center;
 
-      /* Background image is fixed in the viewport so that it doesn't move when 
-     the content's height is greater than the image's height */
-  background-attachment: fixed;
-    
-    /* This is what makes the background image rescale based
-     on the container's size */
-    background-size: cover;
-    
-    /* width is set to 100% */
-    width: 100%;
-    height: 600px;
-    
-    object-fit: contain;
-    /* height: auto; */
-}
 
 .navbar-dark .navbar-nav .nav-link {
     color: var(--light-gray);
@@ -75,11 +51,18 @@ hr {
     /* //transition: width .3s; */
 }
 
-.bg-nav {
-    background: #61434A ;
+.navbar-shadow {
+    -webkit-box-shadow: 0 24px -6px #222;
+    -moz-box-shadow: 0 24px -6px #222;
+    box-shadow: 0 4px 24px -6px #222;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    
+    /* box-shadow : h-offset(l-r) | v-offset(t-b) | blur | spread */
 }
 
-.mercury-content {
+.planet-header-content {
     color: var(--light-gray);
     align-items: center;
     /* background: red; */
@@ -99,26 +82,27 @@ hr {
     
 } */
 
-.mercury-detail {
+.planet-detail {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.mercury-overview {
+.planet-overview {
     background:var(--light-gray);
     padding: 55px;
     
    
 }
 
-.mercury-indepth {
+.planet-indepth {
     padding-top: 50px;
     background-color: #fff;
     color:var(--light-gray);
     /* background: url('./assets/galaxy-bg.jpg'); */
 }
 
-.mercury-starter-text {
+.planet-starter-text {
     color: var(--black-variant);
+    /* background: red; */
     
 }
 
@@ -127,22 +111,9 @@ hr {
 }
 
 
-.mercury-parallax {
-    color: var(--light-gray);
-      /* The image used */
-  background-image: url("./assets/mercury-indepth.jpg");
 
-  /* Set a specific height */
-  min-height: 500px; 
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.mercury-temp {
+.planet-temp {
     padding-top: 50px;
     color: var(--black-variant);
     /* background: red; */
@@ -150,7 +121,7 @@ hr {
 }
 
 
-.mercury-size-distance {
+.planet-size-distance {
     background: var(--black-variant);
     padding-top: 50px;
     padding-bottom: 100px;
@@ -163,7 +134,7 @@ hr {
 }
 
 
-.mercury-more-details {
+.planet-more-details {
     /* background: red; */
     padding: 50px;
     color: var(--black-variant);
@@ -179,9 +150,11 @@ hr {
     /* background: red; */
 }
 
-.mercury-kid {
+.planet-kid {
     width: 50%;
 }
+
+
 
 
 
@@ -240,8 +213,22 @@ footer p {
 
 
 @media screen and (max-width :786px) {
-    .mercury-content {
+    .planet-header-content {
         text-align: center;
+    }
+
+    .planet-size-distance-text{
+        margin-top: 20px;
+    }
+
+    .kid-friendly-text{
+        /* background: red; */
+        margin-top: 20px;
+        /* margin-bottom: 20px; */
+    }
+
+    .kid-section {
+        margin-bottom: 40px;
     }
 
     /* .mercury-content h1 {

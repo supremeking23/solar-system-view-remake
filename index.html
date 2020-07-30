@@ -7,46 +7,184 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./index.css" />
     <title>Hello, world!</title>
     <style>
-      body {
-        background: black;
-      }
+
     </style>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-      
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          
-              <a class="navbar-brand mx-sm-auto" href="#">Solar System</a>
-          
-              <div class="collapse navbar-collapse " id="navbarToggler">
-                  <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#planets">Planets</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#sun">Sun</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Meteor, Comets</a>
-                  </li>
-                  
-                  </ul>
-                  
-              </div>
+    <header id="home">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container">
+        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            
+                <a class="navbar-brand mx-sm-auto" href="#">Solar System View</a>
+            
+                <div class="collapse navbar-collapse " id="navbarToggler">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#planets">Planets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sun">Sun</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Meteor, Comets</a>
+                    </li>
+                    
+                    </ul>
+                    
+                </div>
+        </div>
+        
+      </nav>
+
+
+      <div class="header-content d-flex flex-row align-items-end justify-content-center" style="background: ; height: 100vh;padding:50px">
+        <button>Explore</button>
       </div>
-      
-  </nav>
+    </header>
+
+    <section id="planets">
+      <div class="planet-more-details">
+        <div class="container">
+            <section class="more-detail-sections">
+                <div class="row">
+                    <div class="col">
+                        <h2>Orbit and Rotation</h2>
+                        
+                        <p>Jupiter has the shortest day in the solar system. One day on Jupiter takes only about 10 hours (the time it takes for Jupiter to rotate or spin around once), and Jupiter makes a complete orbit around the Sun (a year in Jovian time) in about 12 Earth years (4,333 Earth days).</p>
+                        <p>
+                            Its equator is tilted with respect to its orbital path around the Sun by just 3 degrees. This means Jupiter spins nearly upright and does not have seasons as extreme as other planets do.
+                        </p>
+                       
+                    </div>
+                </div>
+            </section>
+
+            <section class="more-detail-sections">
+                <div class="row">
+                    <div class="col">
+                        <h2>Structure</h2>
+                    
+                        <p>The composition of Jupiter is similar to that of the Sun—mostly hydrogen and helium. Deep in the atmosphere, pressure and temperature increase, compressing the hydrogen gas into a liquid. This gives Jupiter the largest ocean in the solar system—an ocean made of hydrogen instead of water. Scientists think that, at depths perhaps halfway to the planet's center, the pressure becomes so great that electrons are squeezed off the hydrogen atoms, making the liquid electrically conducting like metal. Jupiter's fast rotation is thought to drive electrical currents in this region, generating the planet's powerful magnetic field. It is still unclear if, deeper down, Jupiter has a central core of solid material or if it may be a thick, super-hot and dense soup. It could be up to 90,032 degrees Fahrenheit (50,000 degrees Celsius) down there, made mostly of iron and silicate minerals (similar to quartz).</p>
+                        
+                    </div>
+                </div>
+        </section>
+
+
+        <section class="more-detail-sections">
+                <div class="row">
+                    <div class="col">
+                        <h2>Formation</h2>
+                    
+                        <p>Jupiter took shape when the rest of the solar system formed about 4.5 billion years ago, when gravity pulled swirling gas and dust in to become this gas giant. Jupiter took most of the mass left over after the formation of the Sun, ending up with more than twice the combined material of the other bodies in the solar system. In fact, Jupiter has the same ingredients as a star, but it did not grow massive enough to ignite.</p>
+
+                        <p>About 4 billion years ago, Jupiter settled into its current position in the outer solar system, where it is the fifth planet from the Sun.</p>
+                    </div>
+                </div>
+            </section>
+
+
+    
+
+
+    <!-- <section class="more-detail-sections kid-section ">
+        <hr >
+        <div class="row pt-5 pb-5">
+            <div class="col-12 col-lg-6 col-md-6 d-flex flex-column align-items-center justify-content-center">
+                <img src="./assets/mercury-kid.png"  class="img-fluid planet-kid">
+            </div>
+
+            <div class="col-12 col-lg-6 col-md-6 text-left kid-friendly-text">
+            <h2>Kid-Friendly Mercury</h2>
+            <p>
+                Mercury is the smallest planet in our solar system. It’s a little bigger than Earth’s Moon. It is the closest planet to the Sun, but it’s actually not the hottest. Venus is hotter.
+            </p>
+            <p>Along with Venus, Earth, and Mars, Mercury is one of the rocky planets. It has a solid surface that is covered with craters like our Moon. It has a thin atmosphere, and it doesn’t have any moons. Mercury likes to keep things simple.</p>
+            <p>
+                Mercury spins slowly compared to Earth, so one day lasts a long time. Mercury takes 59 Earth days to make one full rotation. But a year on Mercury goes fast. Because it’s the closest planet to the sun, it goes around the Sun in just 88 Earth days.
+            </p>
+            </div>
+        </div>
+        <hr >
+    </section> -->
+
+
+        <section class="more-detail-sections">
+            <div class="row">
+                <div class="col">
+                    <h2>Surface</h2>
+                
+                    <p>As a gas giant, Jupiter doesn’t have a true surface. The planet is mostly swirling gases and liquids. While a spacecraft would have nowhere to land on Jupiter, it wouldn’t be able to fly through unscathed either. The extreme pressures and temperatures deep inside the planet crush, melt and vaporize spacecraft trying to fly into the planet.</p>
+
+                   
+                </div>
+            </div>
+    </section>
+
+    <section class="more-detail-sections">
+        <div class="row">
+            <div class="col">
+                <h2>Atmosphere</h2>
+            
+                <p>Jupiter's appearance is a tapestry of colorful cloud bands and spots. The gas planet likely has three distinct cloud layers in its "skies" that, taken together, span about 44 miles (71 kilometers). The top cloud is probably made of ammonia ice, while the middle layer is likely made of ammonium hydrosulfide crystals. The innermost layer may be made of water ice and vapor.</p>
+
+
+
+            </div>
+        </div>
+</section>
+
+
+<section class="more-detail-sections">
+    <div class="row">
+        <div class="col">
+            <h2>Magnetosphere</h2>
+        
+            <p>The Jovian magnetosphere is the region of space influenced by Jupiter's powerful magnetic field. It balloons 600,000 to 2 million miles (1 to 3 million kilometers) toward the Sun (seven to 21 times the diameter or Jupiter itself) and tapers into a tadpole-shaped tail extending more than 600 million miles (1 billion kilometers) behind Jupiter, as far as Saturn's orbit. Jupiter's enormous magnetic field is 16 to 54 times as powerful as that of the Earth. It rotates with the planet and sweeps up particles that have an electric charge. Near the planet, the magnetic field traps swarms of charged particles and accelerates them to very high energies, creating intense radiation that bombards the innermost moons and can damage spacecraft.</p>
+
+            <p>Jupiter's magnetic field also causes some of the solar system's most spectacular aurorae at the planet's poles.</p>
+        </div>
+    </div>
+</section>
+
+<section class="more-detail-sections">
+    <div class="row">
+        <div class="col">
+            <h2>Moon</h2>
+        
+            <p>With four large moons and many smaller moons, Jupiter forms a kind of miniature solar system. Jupiter has 53 confirmed moons and 26 provisional moons awaiting confirmation of discovery. Moons are named after they are confirmed.</p>
+
+            <p>Jupiter's four largest moons—Io, Europa, Ganymede and Callisto—were first observed by the astronomer Galileo Galilei in 1610 using an early version of the telescope. These four moons are known today as the Galilean satellites, and they're some of the most fascinating destinations in our solar system. Io is the most volcanically active body in the solar system. Ganymede is the largest moon in the solar system (even bigger than the planet Mercury). Callisto’s very few small craters indicate a small degree of current surface activity. A liquid-water ocean with the ingredients for life may lie beneath the frozen crust of Europa, making it a tempting place to explore.</p>
+        </div>
+    </div>
+</section>
+
+<section class="more-detail-sections">
+    <div class="row">
+        <div class="col">
+            <h2>Potential for Life</h2>
+        
+            <p>Jupiter’s environment is probably not conducive to life as we know it. The temperatures, pressures and materials that characterize this planet are most likely too extreme and volatile for organisms to adapt to.</p>
+
+            <p>While planet Jupiter is an unlikely place for living things to take hold, the same is not true of some of its many moons. Europa is one of the likeliest places to find life elsewhere in our solar system. There is evidence of a vast ocean just beneath its icy crust, where life could possibly be supported.</p>
+        </div>
+    </div>
+</section>
+    
+        </div>
+    </div>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
