@@ -45,6 +45,11 @@ hr {
 /* end resets */
 
 
+.navbar-brand{
+    font-weight: bolder;
+}
+
+
 .planet-hero .fixed-top{
     transition-duration: 700ms;
   }
@@ -216,6 +221,10 @@ hr {
 
 .planet-kid {
     width: 50%;
+    animation-name: bouncing-planet;
+    animation-duration: 1s;
+    /* position: relative; */
+    animation-iteration-count: infinite;
 }
 
 
@@ -224,7 +233,7 @@ hr {
 
 
 footer {
-    font-family: 'Heebo', sans-serif;
+    /* font-family: 'Heebo', sans-serif; */
     background: url('../assets/footer_bg.jpg');
     color: var(--light-gray);
     padding-top: 50px;

@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
@@ -18,9 +22,7 @@
     <title>Solar System View</title>
 
     <style>
-/*  */
 
-/*ul.solarsystem:hover li {-webkit-animation-play-state: paused;} */
 
     </style>
   
@@ -35,7 +37,7 @@
                 </button>
                 
                 
-                    <a class="navbar-brand mx-sm-auto" href="#">Solar System View</a>
+                    <a class="navbar-brand mx-sm-auto" href="index.html">Solar System View</a>
                 
                     <div class="collapse navbar-collapse " id="navbarToggler">
                         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
@@ -153,7 +155,11 @@
                         <a href="saturn.html" data-toggle="popover" data-html="true" 
                         data-content="
                           <strong>Saturn</strong>
-                          <br/>The Ringed Planet
+                          <br/><p>Saturn is the sixth planet from the Sun and the second largest planet in our solar system.</p>
+                          <p>Adorned with thousands of beautiful ringlets, Saturn is unique among the planets. It is not the only planet to have rings—made of
+                          chunks of ice and rock—but none are as spectacular or as complicated as Saturn's.
+                          <br />
+                          <em>Click the planet to read more details</em></p>
                           
                           ">
                             <img class="img-fluid planets" src="assets/saturn.png">
@@ -164,7 +170,11 @@
                         <a href="neptune.html" data-toggle="popover" data-html="true" 
                         data-content="
                           <strong>Neptune</strong>
-                          <br/>The Windiest Planet
+                          <br/>
+                          <p>Dark, cold and whipped by supersonic winds, ice giant Neptune is the eighth and most distant planet in our solar system.
+                            <br />
+                            <em>Click the planet to read more details</em>
+                          </p>
                           
                           ">
                             <img class="img-fluid planets" src="assets/neptune.png">
@@ -208,7 +218,8 @@
                             <br/>Its gravity holds the solar system together, keeping everything from the biggest planets to the smallest <br />
                              particles of debris in its orbit. Electric currents in the Sun generate a magnetic field that is carried out through the solar<br />
                              system by the solar wind—a stream of electrically charged gas <br />
-                             blowing outward from the Sun in all directions.
+                             blowing outward from the Sun in all directions. <br />
+                             <em>Click the sun to read more details</em>
                         ">
                         <img class="img-fluid" src="assets/sun-two.png">
                         </a>
@@ -220,33 +231,141 @@
     </section>
 
 
-    <section id="asteroid-comets-and-meteors" class="asteroid-comets-and-meteors">
-        <div class="sun-container">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h2>The Sun</h2>
+
+
+
+
+    <footer>
+
+        <section id="asteroid-comets-and-meteors" class="asteroid-comets-and-meteors">
+            <div class="asteroid-comets-and-meteors-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Asteroids, Comets and Meteors </h2>
+                        </div>
+                    </div>
+      
+                    <div class="row asteroid-comets-and-meteors-row">
+                        <div class="col-4 col-md-4 col-lg-4 ">
+
+    
+    
+                            <div class="card" style="width: 18rem;">
+                                <img src="assets/asteroid.jpg"class="card-img-top img-fluid" alt="asteroid">
+                                <div class="card-body">
+                                  <h5 class="card-title">Asteroid</h5>
+                                  <p class="card-text">Asteroids, sometimes called minor planets, are rocky, airless remnants 
+                                      left over from the early formation of our solar system about 4.6 billion years ago.</p>
+                                  
+                                </div>
+                              </div>
+    
+                        </div>
+                        
+                        <div class="col-4 col-md-4 col-lg-4">
+
+                            <div class="card" style="width: 18rem;">
+                               
+                                <img class="card-img-top img-fluid" alt="comet" src="assets/comet.jpg">
+                                <div class="card-body">
+                                  <h5 class="card-title">Comet</h5>
+                                  <p class="card-text">Comets are cosmic snowballs of frozen gases, rock and dust that orbit the Sun. 
+                                      When frozen, they are the size of a small town.</p>
+                                  
+                                </div>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="col-4 col-md-4 col-lg-4">
+
+                            <div class="card" style="width: 18rem;">
+                               
+                                <img class="card-img-top img-fluid" alt="meteor" src="assets/meteor.jpg">
+                               
+                                <div class="card-body">
+                                  <h5 class="card-title">Meteors</h5>
+                                  <p class="card-text">Meteoroids are objects in space that range in size from dust grains to small asteroids. Think of them as “space rocks."</p>
+                                  
+                                </div>
+                            </div>
+
+                            
+                        </div>
+    
+                    </div>
+      
+                </div>
+             </div> 
+        </section>
+      
+           <div class="container">
+
+
+               <div class="footer-link-container">
+                   <div class="row">
+                       <div class="col-sm-3 col-md-4 list-item-footer">
+                           <h3>Solar System</h3>
+                           <ul class="footer-lists">
+                               <li class="nav-item"><a href="#">Our Solar System</a></li>
+                               <li><a href="#">Sun</a></li>
+                               <li><a href="#">Kuiper Belt</a></li>
+                               <li><a href="#">Oort Cloud</a></li>
+                               <li><a href="#">Beyond Our Solar System</a></li>
+                           </ul>
+                       </div>
+                       <div class="col-sm-6 col-md-4 list-item-footer">
+                           <h3>Moons</h3>
+                           <ul class="footer-lists">    
+                                <li><a href="#">Earth(1)</a></li>                        
+                               <li><a href="#">Mars(2)</a></li>
+                               <li><a href="#">Jupiter(79)</a></li>
+                               <li><a href="#">Saturn(82)</a></li>
+                               <li><a href="#">Uranus(27)</a></li>
+                               <li><a href="#">Neptune(14)</a></li>
+                               <li><a href="#">Pluto(5)</a></li>
+                           </ul>
+                       </div>
+                       <div class="col-12 col-md-4 item list-item-footer">
+                           <h3>Social Media Sites</h3>
+                           <div class="col item social">
+                               <a href="#"><i class="icon ion-social-facebook"></i></a>
+                               <a href="#"><i class="icon ion-social-twitter"></i></a>
+                               <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                               <a href="#"><i class="icon ion-social-instagram"></i></a>
+                           </div>
+                       </div>
+
+                   </div>
+               </div>
+              
+               <div class="row back-top-container">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <a href="#top" class="btn pulsating-animation">Back to Top</a>
+                </div>
+               </div>
+
+
+
+                <div class="row created-by">
+                   
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <p>Copyright ©2020 Solar System View. All Rights Reserved </p>
                     </div>
                 </div>
-  
-                <div class="row the-sun">
-                    <div class="col d-flex flex-row justify-content-center">
-                        <a href="sun.html" data-toggle="popover-sun" data-html="true" 
-                            data-content="
-                            <strong>Sun</strong>
-                            <br/>Its gravity holds the solar system together, keeping everything from the biggest planets to the smallest <br />
-                             particles of debris in its orbit. Electric currents in the Sun generate a magnetic field that is carried out through the solar<br />
-                             system by the solar wind—a stream of electrically charged gas <br />
-                             blowing outward from the Sun in all directions.
-                        ">
-                        <img class="img-fluid" src="assets/sun-two.png">
-                        </a>
-                    </div>
-                </div>
-  
-            </div>
-         </div> 
-    </section>
+
+               <div class="row created-by">
+                   
+                   <div class="col d-flex justify-content-center align-items-center">
+                       <p>Harold Nocos| Micheal Pelagio | Ivan Christian Jay Funcion </p>
+                   </div>
+               </div>
+           </div>
+   
+    </footer>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

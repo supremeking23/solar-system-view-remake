@@ -77,6 +77,9 @@ header h1 {
     margin-bottom: 25px;
 }
 
+.navbar-brand{
+    font-weight: bolder;
+}
 
 .navbar-dark .navbar-nav .nav-link {
     color: var(--light-gray);
@@ -248,28 +251,169 @@ header h1 {
 }
 
 
+footer {
+    background: url('../assets/footer_bg.jpg');
+    color: var(--light-gray);
+    padding-top: 50px;
 
-.asteroid-comets-and-meteors {
-    background: url('../assets/galaxy-three.jpg');
-    /* Background image doesn't tile */
+     /* Background image doesn't tile */
    background-repeat: no-repeat;
    
    /* Background image is centered vertically and horizontally at all times */
    background-position: center center;
 
-   /* background-attachment: fixed; */
+     /* Background image is fixed in the viewport so that it doesn't move when 
+    the content's height is greater than the image's height */
+   background-attachment: fixed;
    
    /* This is what makes the background image rescale based
-       on the container's size */
+    on the container's size */
    background-size: cover;
+}
+
+
+.footer-lists {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.footer-lists a {
+    color: var(--gray);
+    transition: all .5s;
+}
+
+.footer-lists a:hover {
+    color:var(--light-gray);
+    text-decoration: none;
+}
+
+
+.footer-link-container {
+    margin-top: 100px;
+    /* background: red; */
+}
+
+.list-item-footer {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.item.social > a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.4);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75;
+    
+}
+
+
+
+.asteroid-comets-and-meteors {
+
+    /* background: #d3d3d3; */
+
+   background-repeat: no-repeat;
    
-   /* width is set to 100% */
+ 
+   background-position: center center;
+
+   background-size: cover;
+
    width: 100%;
    height:100%;
    
    object-fit: contain;
+
+   
 }
 
+
+.asteroid-comets-and-meteors 
+
+.asteroid-comets-and-meteors-container{
+    padding-top: 60px;
+}
+
+.asteroid-comets-and-meteors-row{
+    /* padding: 50px; */
+    padding-top: 79px;
+    padding-bottom: 139px;
+    color: var(--black-variant);
+}
+
+
+.card:hover {
+    background: transparent;
+    transition: all .9s ease-in-out;
+}
+
+.card:hover .card-body{
+    color: var(--light-gray);
+    background: transparent;
+    transition: all .9s ease-in-out;
+}
+
+
+.back-top-container{
+    /* background: red; */
+    margin-top: 50px;
+    height: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.back-top-container a{
+    color: var(--light-gray);
+}
+
+
+
+/* for overlay */
+
+/* .entity {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .entity:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+     top: 50%;
+    left: 50%; 
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* text-align: justify; */
+  } */
 
 
 
